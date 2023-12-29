@@ -24,6 +24,7 @@ const addCount = () => {
 	counter.innerHTML = printvalue;
 };
 
+// adds to the value that gets added every half second
 button.onclick = addCount;
 
 // Add to the value that will be added every half second
