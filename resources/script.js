@@ -20,7 +20,7 @@ const button = document.querySelector("#clicker");
 const addCount = () => {
 	console.log("click");
 	count += toAdd;
-	let printvalue = Math.floor(count);
+	let printvalue = bigNumber(Math.floor(count));
 	counter.innerHTML = printvalue;
 };
 
@@ -29,14 +29,14 @@ button.onclick = addCount;
 // Add to the value that will be added every half second
 const addToInterval = (valueToAdd) => {
 	prSecond += valueToAdd;
-	let printvalue = Math.round(prSecond * 100) / 100;
-	prSecondCounter.innerHTML = `+ ${printvalue} hvert sekund`;
+	let printvalue = bigNumber(Math.floor(prSecond * 100) / 100);
+	prSecondCounter.innerHTML = `+ ${printvalue} <wbr>hvert sekund`;
 };
 
 // loop every half second
 const interval = () => {
 	count += prSecond / 2;
-	counter.innerHTML = count.toFixed(0);
+	counter.innerHTML = bigNumber(Math.floor(count));
 };
 setInterval(interval, 500);
 
