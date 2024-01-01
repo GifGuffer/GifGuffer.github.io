@@ -38,7 +38,7 @@ body {
 
 .layout {
 	display: grid;
-	min-height: 100vh;
+	min-height: 100dvh;
 	height: 100%;
 	grid-template-columns: 2fr 1fr;
 	background: rgb(42, 41, 57);
@@ -89,7 +89,7 @@ body {
 }
 
 #counter {
-	margin-top: 2vh;
+	margin-top: 2dvh;
 	font-size: var(--textsize-900);
 }
 
@@ -112,7 +112,7 @@ body {
 }
 
 .upgrades {
-	max-height: 100vh;
+	max-height: 100dvh;
 	width: 100%;
 	overflow-y: auto;
 	background: rgb(42, 41, 57);
@@ -122,8 +122,8 @@ body {
 @media only screen and (width < 850px) {
 	.upgrades {
 		position: absolute;
-		height: 80vh;
-		top: 20vh;
+		height: 80dvh;
+		top: 20dvh;
 		z-index: 1;
 	}
 	#toggle {
